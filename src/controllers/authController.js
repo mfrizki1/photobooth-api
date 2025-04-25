@@ -88,7 +88,6 @@ exports.register = async (req, res) => {
             email,
             password
         } = req.body;
-        console.log("req.body: ", req.body);
 
         // Validate input
         if (!username) {
