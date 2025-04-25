@@ -88,6 +88,7 @@ exports.register = async (req, res) => {
             email,
             password
         } = req.body;
+        console.log("req.body: ", req.body);
 
         // Validate input
         if (!username) {
@@ -164,6 +165,7 @@ exports.register = async (req, res) => {
             }
         });
     } catch (error) {
+        console.log("error: ", error);
         console.error(error);
         res.status(500).json({
             success: false,
